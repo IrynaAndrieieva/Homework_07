@@ -10,7 +10,14 @@ namespace HW7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Write a");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Write b");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Write c");
+            double c = Convert.ToDouble(Console.ReadLine());
+
+            Console.ReadKey();
         }
     }
 }
