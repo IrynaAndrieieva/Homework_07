@@ -20,7 +20,7 @@ namespace HW7
             Console.ReadKey();
         }
 
-        public double getD(double a, double b, double c)
+        public static double getD(double a, double b, double c)
         {
             double D = Math.Pow(b, 2) - 4 * a * c;
             return D;
@@ -31,5 +31,32 @@ namespace HW7
             x1 = (-b + Math.Sqrt(getD(a, b, c))) / (2 * a);
             x2 = (-b - Math.Sqrt(getD(a, b, c))) / (2 * a);
         }
+
+        public static void printRoots(double a, double b, double c)
+        {
+            double x1;
+            double x2;
+            getRoots(a, b, c, out x1, out x2);
+
+
+            if (getD(a, b, c) > 0)
+
+            {
+                Console.WriteLine("Roots" + x1.ToString() + "\n" + x2.ToString());
+            }
+
+            if (getD(a, b, c) == 0)
+
+            {
+                Console.WriteLine("Roots x1 = x2 =" + x1.ToString());
+            }
+
+            if (getD(a, b, c) < 0)
+
+            {
+                Console.WriteLine("No roots");
+            }
+        }
     }
+
 }
