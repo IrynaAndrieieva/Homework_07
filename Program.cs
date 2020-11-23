@@ -16,7 +16,7 @@ namespace HW7
             double b = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Write c");
             double c = Convert.ToDouble(Console.ReadLine());
-
+            printRoots(a, b, c);
             Console.ReadKey();
         }
 
