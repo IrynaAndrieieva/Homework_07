@@ -19,5 +19,11 @@ namespace HW7
 
             Console.ReadKey();
         }
+
+        public double getD(double a, double b, double c)
+        {
+            double D = Math.Pow(b, 2) - 4 * a * c;
+            return D;
+        }
     }
 }
