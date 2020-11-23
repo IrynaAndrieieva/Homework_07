@@ -10,14 +10,21 @@ namespace HW7
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Write a");
-            double a = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Write b");
-            double b = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Write c");
-            double c = Convert.ToDouble(Console.ReadLine());
-            printRoots(a, b, c);
-            Console.ReadKey();
+            Console.WriteLine("Plese, put Enter from start");
+            while (Console.ReadLine() != "exit")
+            {
+                Console.WriteLine("Write a");
+                double a = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Write b");
+                double b = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Write c");
+                double c = Convert.ToDouble(Console.ReadLine());
+                printRoots(a, b, c);
+                Console.WriteLine("If you want close console put enter and write exit");
+                Console.ReadKey();
+                Console.Clear();
+            }
+                      
         }
 
         public static double getD(double a, double b, double c)
